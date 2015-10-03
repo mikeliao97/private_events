@@ -1,0 +1,7 @@
+<h1> Login by typing in your username </h1>
+<%= form_for(:session, url:login_path) do |f| %>
+  <%= f.label "Login" %>
+  <%= f.text_field :username %>
+  
+  <%= f.submit "Sign in" %>
+<% end %>
